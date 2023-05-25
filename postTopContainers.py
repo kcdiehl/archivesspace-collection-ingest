@@ -60,7 +60,8 @@ for index, row in df.iterrows():
                        'repository': {'ref': '/repositories/3'}}
     ev.add_to_dict(row, containerRecord, 'barcode', 'barcode')
     ev.add_to_dict(row, containerRecord, 'indicator', 'indicator')
-
+    ev.add_to_dict(row, containerRecord, 'type', 'type')
+    
     locations = []
     location = {'jsonmodel_type': 'container_location'}
     ev.add_to_dict(row, location, 'ref', 'location_ref')
